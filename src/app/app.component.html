@@ -1,5 +1,6 @@
-<app-search (emitter)="search($event)"></app-search>
+<a routerLink="/customer" class="btn">Customer</a> |
+<a routerLink="/order" class="btn">Order</a> |
+<a routerLink="/product" class="btn">Product</a>
 
-<hr />
-
-<h1 *ngFor="let text of filterList">{{ text }}</h1>
+<hr>
+<router-outlet></router-outlet>
