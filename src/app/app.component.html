@@ -1,5 +1,4 @@
-<input type="text" placeholder="Search Here" #searchText />
-<button (click)="search(searchText.value)">Search Here</button>
+<app-search (emitter)="search($event)"></app-search>
 
 <hr />
 
