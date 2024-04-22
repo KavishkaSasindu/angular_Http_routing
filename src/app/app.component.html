@@ -1,1 +1,21 @@
 <button (click)="loadData()">LoadData Here</button>
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Body</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tempData of myData">
+      <th>{{tempData.id}}</th>
+      <th>{{tempData.name}}</th>
+      <th>{{tempData.email}}</th>
+      <th>{{tempData.body}}</th>
+    </tr>
+  </tbody>
+</table>
