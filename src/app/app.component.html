@@ -22,6 +22,6 @@
   </tbody>
 </table>
 
-<div class="loading" *ngIf="loading">
+<div class="loading" *ngIf="loadingService.loadingState | async">
   <img src="https://www.icegif.com/wp-content/uploads/2023/07/icegif-1263.gif" alt="imag-loading">
 </div>
